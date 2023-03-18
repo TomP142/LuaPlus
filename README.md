@@ -4,6 +4,16 @@ The LuaPlus module (class) provides a simple and easy-to-use class system for Lu
 
 ## Table of Contents
 
+- [FindInstance](#findinstance)
+- [GetDistance](#getdistance)
+- [IsPlayerInRange](#isplayerinrange)
+- [CreateBillboardGUI](#createbillboardgui)
+- [DealDamage](#dealdamage)
+- [FormatTime](#formattime)
+- [Lerp](#lerp)
+- [Tween](#tween)
+- [IsCharacterOnGround](#ischaracteronground)
+- [CloneToParent](#clonetoparent)
 - [Installation](#installation)
 - [Creating a Class](#creating-a-class)
 - [Inheriting from a Class](#inheriting-from-a-class)
@@ -15,6 +25,109 @@ The LuaPlus module (class) provides a simple and easy-to-use class system for Lu
 1. Create a new Script in the `ServerScriptService` and name it `LuaPlus`.
 2. Copy the contents of the `LuaPlus.lua` script provided above into the new Script.
 3. Save the script.
+
+## FindInstance
+
+`LuaPlus:FindInstance(instanceType, parent)`
+
+Finds an instance of a specific type within a parent instance.
+
+**Parameters:**
+
+- `instanceType` (string): The class name of the instance type you want to find.
+- `parent` (Instance): The parent instance to search in.
+
+**Returns:**
+
+- (Instance) The first instance of the specified type found within the parent.
+
+## GetDistance
+
+`LuaPlus:GetDistance(position1, position2)`
+
+Calculates the distance between two Vector3 positions.
+
+**Parameters:**
+
+- `position1` (Vector3): The first position.
+- `position2` (Vector3): The second position.
+
+**Returns:**
+
+- (number) The distance between the two positions.
+
+## IsPlayerInRange
+
+`LuaPlus:IsPlayerInRange(player, position, range)`
+
+Checks if a player is within a specific range of a position.
+
+**Parameters:**
+
+- `player` (Player): The player to check.
+- `position` (Vector3): The position to check the range from.
+- `range` (number): The range in studs.
+
+**Returns:**
+
+- (boolean) `true` if the player is within the specified range, `false` otherwise.
+
+## CreateBillboardGUI
+
+`LuaPlus:CreateBillboardGUI(text, object, size)`
+
+Creates a Billboard GUI for an object.
+
+**Parameters:**
+
+- `text` (string): The text to display on the Billboard GUI.
+- `object` (BasePart): The object to attach the Billboard GUI to.
+- `size` (number): The size of the Billboard GUI.
+
+**Returns:**
+
+- (BillboardGui) The created Billboard GUI.
+
+## DealDamage
+
+`LuaPlus:DealDamage(character, damage)`
+
+Deals damage to a character.
+
+**Parameters:**
+
+- `character` (Model): The character to deal damage to.
+- `damage` (number): The amount of damage to deal.
+
+## FormatTime
+
+`LuaPlus:FormatTime(seconds)`
+
+Converts seconds to a formatted time string.
+
+**Parameters:**
+
+- `seconds` (number): The number of seconds to format.
+
+**Returns:**
+
+- (string) The formatted time string in the format "MM:SS".
+
+## Lerp
+
+`LuaPlus:Lerp(a, b, alpha)`
+
+Linearly interpolates between two values.
+
+**Parameters:**
+
+- `a` (number): The starting value.
+- `b` (number): The ending value.
+- `alpha` (number): The interpolation factor, where 0 represents the starting value and 1 represents the ending value.
+
+**Returns:**
+
+- (number) The interpolated value.
 
 ## Creating a Class
 
