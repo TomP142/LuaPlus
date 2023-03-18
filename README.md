@@ -42,7 +42,7 @@ To initialize a class, define an `init` method inside the class. The `init` meth
 local MyClass = LuaPlus.CreateClass()
 function MyClass:init(arg1, arg2)
     self.arg1 = arg1
-    `self.arg2 = arg2
+    self.arg2 = arg2
 end
 ```
 
